@@ -40,13 +40,7 @@ class SendEmail(Resource):
         except:
             print('Something went wrong...')
 
-
-
-
-
-api.add_resource(SendEmail)
-
-
+        api.add_resource(SendEmail,'/sendEmail')
 
 if __name__ == '__main__':
     app.run(debug=True)
